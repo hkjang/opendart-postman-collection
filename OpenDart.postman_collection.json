@@ -1,0 +1,912 @@
+{
+	"info": {
+		"_postman_id": "98c230f2-804a-4055-9f71-b20dcb650f0b",
+		"name": "OpenDart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "공시정보",
+			"item": [
+				{
+					"name": "공시검색",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/list.json?crtfc_key={{crtfc_key}}&bgn_de=20200117&end_de=20200117&corp_cls=Y&page_no=1&page_count=10",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"list.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "bgn_de",
+									"value": "20200117"
+								},
+								{
+									"key": "end_de",
+									"value": "20200117"
+								},
+								{
+									"key": "corp_cls",
+									"value": "Y"
+								},
+								{
+									"key": "page_no",
+									"value": "1"
+								},
+								{
+									"key": "page_count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "기업개황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/company.json?crtfc_key={{crtfc_key}}&corp_code=00126380",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"company.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "고유번호",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/corpCode.xml?crtfc_key={{crtfc_key}}",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"corpCode.xml"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "공시서류원본파일",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/document.xml?crtfc_key={{crtfc_key}}&rcept_no=20190401004781",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"document.xml"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "rcept_no",
+									"value": "20190401004781"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "사업보고서 주요정보",
+			"item": [
+				{
+					"name": "증자(감자) 현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/irdsSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"irdsSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "배당에 관한 사항",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/alotMatter.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"alotMatter.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "자기주식 취득 및 처분 현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/tesstkAcqsDspsSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"tesstkAcqsDspsSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "최대주주 현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/hyslrSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"hyslrSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "최대주주 변동 현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/hyslrChgSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"hyslrChgSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "소액주주현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/mrhlSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"mrhlSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "임원현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/exctvSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"exctvSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "직원현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/empSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"empSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "이사ㆍ감사의 개인별 보수 현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/hmvAuditIndvdlBySttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"hmvAuditIndvdlBySttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "이사ㆍ감사 전체의 보수현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/hmvAuditAllSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"hmvAuditAllSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "개인별 보수지급 금액(5억이상 상위5인)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/indvdlByPay.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"indvdlByPay.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "타법인 출자현황",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/otrCprInvstmntSttus.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"otrCprInvstmntSttus.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "상장기업 재무정보",
+			"item": [
+				{
+					"name": "단일회사 주요계정",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/fnlttSinglAcnt.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"fnlttSinglAcnt.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "다중회사 주요계정",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/fnlttMultiAcnt.json?crtfc_key={{crtfc_key}}&corp_code=00356370,00334624&bsns_year=2018&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"fnlttMultiAcnt.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00356370,00334624"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "단일회사 전체 재무제표",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?crtfc_key={{crtfc_key}}&corp_code=00126380&bsns_year=2018&reprt_code=11011&fs_div=OFS",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"fnlttSinglAcntAll.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								},
+								{
+									"key": "bsns_year",
+									"value": "2018"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								},
+								{
+									"key": "fs_div",
+									"value": "OFS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XBRL택사노미재무제표양식",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/xbrlTaxonomy.json?crtfc_key={{crtfc_key}}&sj_div=BS1",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"xbrlTaxonomy.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "sj_div",
+									"value": "BS1"
+								}
+							]
+						},
+						"description": "요청 인자\r\n키\t명칭\t타입\t필수여부\t값설명\r\ncrtfc_key\tAPI 인증키\tSTRING(40)\tY\t발급받은 인증키(40자리)\r\nsj_div\t재무제표구분\tSTRING(5)\tY\t(※재무제표구분 참조)\r\n재무제표구분\r\n재무제표구분\t재무제표명칭\t개별/연결\t표시방법\t세전세후\r\nBS1\t재무상태표\t연결\t유동/비유동법\t\r\nBS2\t재무상태표\t개별\t유동/비유동법\t\r\nBS3\t재무상태표\t연결\t유동성배열법\t\r\nBS4\t재무상태표\t개별\t유동성배열법\t\r\nIS1\t별개의 손익계산서\t연결\t기능별분류\t\r\nIS2\t별개의 손익계산서\t개별\t기능별분류\t\r\nIS3\t별개의 손익계산서\t연결\t성격별분류\t\r\nIS4\t별개의 손익계산서\t개별\t성격별분류\t\r\nCIS1\t포괄손익계산서\t연결\t세후\t\r\nCIS2\t포괄손익계산서\t개별\t세후\t\r\nCIS3\t포괄손익계산서\t연결\t세전\t\r\nCIS4\t포괄손익계산서\t개별\t세전\t\r\nDCIS1\t단일 포괄손익계산서\t연결\t기능별분류\t세후포괄손익\r\nDCIS2\t단일 포괄손익계산서\t개별\t기능별분류\t세후포괄손익\r\nDCIS3\t단일 포괄손익계산서\t연결\t기능별분류\t세전\r\nDCIS4\t단일 포괄손익계산서\t개별\t기능별분류\t세전\r\nDCIS5\t단일 포괄손익계산서\t연결\t성격별분류\t세후포괄손익\r\nDCIS6\t단일 포괄손익계산서\t개별\t성격별분류\t세후포괄손익\r\nDCIS7\t단일 포괄손익계산서\t연결\t성격별분류\t세전\r\nDCIS8\t단일 포괄손익계산서\t개별\t성격별분류\t세전\r\nCF1\t현금흐름표\t연결\t직접법\t\r\nCF2\t현금흐름표\t개별\t직접법\t\r\nCF3\t현금흐름표\t연결\t간접법\t\r\nCF4\t현금흐름표\t개별\t간접법\t\r\nSCE1\t자본변동표\t연결\t\t\r\nSCE2\t자본변동표\t개별"
+					},
+					"response": []
+				},
+				{
+					"name": "재무제표 원본파일(XBRL)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/fnlttXbrl.xml?crtfc_key={{crtfc_key}}&rcept_no=20190401004781&reprt_code=11011",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"fnlttXbrl.xml"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "rcept_no",
+									"value": "20190401004781"
+								},
+								{
+									"key": "reprt_code",
+									"value": "11011"
+								}
+							]
+						},
+						"description": "crtfc_key\tAPI 인증키\tSTRING(40)\tY\t발급받은 인증키(40자리)\r\nrcept_no\t접수번호\tSTRING(8)\tY\t접수번호 ※ 조회방법 : 공시검색API 호출 > 응답요청 값 rcept_no 추출\r\nreprt_code\t보고서 코드\tSTRING(5)\tY\t1분기보고서 : 11013 반기보고서 : 11012 3분기보고서 : 11014 사업보고서 : 11011"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "지분공시 종합정보",
+			"item": [
+				{
+					"name": "대량보유 상황보고",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/majorstock.json?crtfc_key={{crtfc_key}}&corp_code=00126380",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"majorstock.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "임원ㆍ주요주주 소유보고",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opendart.fss.or.kr/api/elestock.json?crtfc_key={{crtfc_key}}&corp_code=00126380",
+							"protocol": "https",
+							"host": [
+								"opendart",
+								"fss",
+								"or",
+								"kr"
+							],
+							"path": [
+								"api",
+								"elestock.json"
+							],
+							"query": [
+								{
+									"key": "crtfc_key",
+									"value": "{{crtfc_key}}"
+								},
+								{
+									"key": "corp_code",
+									"value": "00126380"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
